@@ -23,19 +23,23 @@
                             style="align-self: stretch; height: 164px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
                             <div
                                 style="color: #111827; font-size: 60px; font-family: Manrope; font-weight: 800; word-wrap: break-word">
-                                <span id = 'temp'></span></div>
+                                <span id='temp'></span>
+                            </div>
                             <div class="Cloud"
                                 style="color: #8EC1DD; font-size: 24px; font-family: Manrope; font-weight: 800; word-wrap: break-word">
-                                <span id = 'weather'></span></div>
+                                <span id='weather'></span>
+                            </div>
                         </div>
                         <div class="UvLevel"
                             style="align-self: stretch; height: 164px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
                             <div class="L3"
                                 style="color: #111827; font-size: 96px; font-family: Manrope; font-weight: 800; word-wrap: break-word">
-                                <span id = 'uvi' style="font-size: 24px;"></span></div>
+                                <span id='uvi' style="font-size: 24px;"></span>
+                            </div>
                             <div class="High"
                                 style="color: #8EC1DD; font-size: 24px; font-family: Manrope; font-weight: 800; word-wrap: break-word">
-                                <span id = 'uvi_level'></span></div>
+                                <span id='uvi_level'></span>
+                            </div>
                         </div>
                     </div>
                     <div class="City"
@@ -55,7 +59,7 @@
                             </div>
                             <div class="Melbourne"
                                 style="color: #111827; font-size: 48px; font-family: Manrope; font-weight: 800; word-wrap: break-word">
-                                Melbourne</div>
+                                <span id="city"></span></div>
                         </div>
                     </div>
                     <div class="Icon"
@@ -63,42 +67,14 @@
                         <img class="Shadow"
                             style="width: 299.84px; height: 284px; left: 0px; top: 0px; position: absolute; opacity: 0.50; box-shadow: 64px 64px 64px; filter: blur(64px)"
                             src="https://via.placeholder.com/300x284" />
-                            <i id="weather_icon" style="font-size:250px;"></i>
+                        <i id="weather_icon" style="font-size:250px;"></i>
                     </div>
                     <div class="SearchLocation"
                         style="width: 264px; height: 75px; left: 359px; top: 47px; position: absolute; justify-content: space-between; align-items: flex-end; display: inline-flex">
-                        <div class="Location"
-                            style="justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
-                            <div class="Suburb" style="width: 134px; position: relative">
-                                <div class="Suburb"
-                                    style="width: 134px; height: 37px; left: 0px; top: 0px; position: absolute; color: #333333; font-size: 14px; font-family: Roboto; font-weight: 500; word-wrap: break-word">
-                                    Suburb</div>
-                                <div class="Location"
-                                    style="width: 134px; height: 34px; padding-left: 18px; padding-right: 18px; padding-top: 7px; padding-bottom: 7px; left: 0px; top: 41px; position: absolute; background: #E0E0E0; border-radius: 5px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
-                                    <div class="SOPauloSOPauloBrasil"
-                                        style="flex: 1 1 0; color: #333333; font-size: 14px; font-family: Manrope; font-weight: 400; word-wrap: break-word">
-                                        Melbourne</div>
-                                </div>
-                            </div>
-                            <div class="Postcode"
-                                style="width: 83px; height: 75px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 6px; display: inline-flex">
-                                <div class="Postcode"
-                                    style="width: 83px; flex: 1 1 0; color: #333333; font-size: 14px; font-family: Roboto; font-weight: 500; word-wrap: break-word">
-                                    Postcode</div>
-                                <div class="Location"
-                                    style="align-self: stretch; padding-left: 18px; padding-right: 18px; padding-top: 7px; padding-bottom: 7px; background: #E0E0E0; border-radius: 5px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
-                                    <div class="SOPauloSOPauloBrasil"
-                                        style="color: #333333; font-size: 14px; font-family: Manrope; font-weight: 400; word-wrap: break-word">
-                                        3006</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Search"
-                            style="border-radius: 5px; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
-                            <img class="Search"
-                                style="width: 34px; height: 34px; background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%); border-radius: 5px"
-                                src="https://via.placeholder.com/34x34" />
-                        </div>
+                        <input type="text" id="locationInput" placeholder="Enter Suburb or Postcode"
+                            style="flex-grow: 1; margin-right: 8px;">
+                        <!-- Search Button -->
+                        <button id="searchButton" style="width: 34px; height: 34px;">🔍</button>
                     </div>
                 </div>
                 <div class="TipsAndTricks" style="width: 650px; height: 471.58px; position: relative">
@@ -131,7 +107,7 @@
                     <div class="Vis1Chart"
                         style="width: 591px; height: 359px; left: 31px; top: 30px; position: absolute; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
                         <img class="Image1" style="align-self: stretch; height: 310px; border-radius: 42px"
-                            src="https://via.placeholder.com/591x310" />
+                            src="img1.jpg" />
                     </div>
                 </div>
                 <div class="RightUnder" style="width: 650px; height: 420px; position: relative">
@@ -141,7 +117,7 @@
                     <div class="Vis2Chart"
                         style="width: 591px; height: 359px; left: 31px; top: 30px; position: absolute; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
                         <img class="Image2" style="width: 571.43px; height: 310px; border-radius: 42px"
-                            src="https://via.placeholder.com/571x310" />
+                            src="img2.jpg" />
                     </div>
                 </div>
             </div>
@@ -153,6 +129,79 @@
 <script>
 
     const apiKey = '9aa73feb7fb935f616f7d80eadb6c330';
+
+    document.getElementById('searchButton').addEventListener('click', function() {
+        const locationInput = document.getElementById('locationInput').value;
+        if (/^\d{4}$/.test(locationInput)) {
+            convertToCoordinatesUsingZip(locationInput, 'AU').then(coords => {
+                getWeather(coords.lat, coords.lon);
+
+                getCityNameFromCoords(coords.lat, coords.lon)
+                    .then(cityName => {
+                        document.getElementById('city').textContent = cityName;
+                    })
+                    .catch(error => console.error('Error getting city name:', error));
+            }).catch(error => {
+                console.error('Error fetching weather data:', error);
+            });
+        } else {
+            convertToCoordinates(locationInput, 'AU').then(coords => {
+                getWeather(coords.lat, coords.lon);
+
+                document.getElementById('city').textContent = locationInput;
+            }).catch(error => {
+                console.error('Error fetching weather data:', error);
+            });
+        }
+    });
+
+    function getCityNameFromCoords(lat, lon) {
+        return new Promise((resolve, reject) => {
+            const reverseGeocodeUrl = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=${apiKey}`;
+            fetch(reverseGeocodeUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.length > 0) {
+                        resolve(data[0].name);
+                    } else {
+                        reject('City name not found');
+                    }
+                })
+                .catch(error => reject(error));
+        });
+    }
+
+    function convertToCoordinates(location, countryCode) {
+        return new Promise((resolve, reject) => {
+            const geocodeApiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${location},${countryCode}&limit=1&appid=${apiKey}`;
+            fetch(geocodeApiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.length > 0) {
+                        resolve({ lat: data[0].lat, lon: data[0].lon });
+                    } else {
+                        reject('Location not found');
+                    }
+                })
+                .catch(error => reject(error));
+        });
+    }
+
+    function convertToCoordinatesUsingZip(zipCode, countryCode) {
+        return new Promise((resolve, reject) => {
+            const zipApiUrl = `https://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},${countryCode}&appid=${apiKey}`;
+            fetch(zipApiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.lat && data.lon) {
+                        resolve({ lat: data.lat, lon: data.lon });
+                    } else {
+                        reject('Location not found');
+                    }
+                })
+                .catch(error => reject(error));
+        });
+    }
 
     function getWeatherIcon(main) {
         switch (main.toLowerCase()) {
@@ -194,7 +243,7 @@
                 const uvi = Math.round(data.current.uvi);
                 const mainWeather = data.current.weather[0].main;
                 const iconClass = getWeatherIcon(mainWeather);
-                const temp = Math.round(data.current.temp)/10;
+                const temp = Math.round(data.current.temp) / 10;
 
                 document.getElementById(`uvi`).textContent = 'UV Level: ' + uvi;
                 document.getElementById('uvi_level').textContent = getLevel(uvi);
