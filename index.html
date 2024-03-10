@@ -46,16 +46,16 @@
                         style="width: 287px; height: 91px; left: 26px; top: 47px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
                         <div class="March2024"
                             style="color: #6B7280; font-size: 18px; font-family: Manrope; font-weight: 500; word-wrap: break-word">
-                            5 March, 2024</div>
+                            <span id="date"></span></div>
                         <div class="NowLocation"
                             style="justify-content: flex-start; align-items: center; display: inline-flex">
                             <div class="LocalizationIcon" style="width: 32px; height: 32px; position: relative">
-                                <div class="Vector15"
+                                <!-- <div class="Vector15"
                                     style="width: 28px; height: 25px; left: 2px; top: 5px; position: absolute; border: 2px #4B5563 solid">
-                                </div>
-                                <div class="Ellipse20"
+                                </div> -->
+                                <!-- <div class="Ellipse20"
                                     style="width: 4px; height: 4px; left: 14px; top: 11px; position: absolute; border-radius: 9999px; border: 2px #4B5563 solid">
-                                </div>
+                                </div> -->
                             </div>
                             <div class="Melbourne"
                                 style="color: #111827; font-size: 48px; font-family: Manrope; font-weight: 800; word-wrap: break-word">
@@ -88,10 +88,10 @@
                             Sun Safety Tips and Tricks</div>
                         <div class="Descripition"
                             style="align-self: stretch; flex: 1 1 0; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 78px; display: flex">
-                            <div class="InWarmerWeatherLightAndComfortableClothingIsRecommended"
+                            <div class="uvLevelDisplay"
                                 style="align-self: stretch; height: 88px; color: black; font-size: 32px; font-family: Manrope; font-weight: 400; word-wrap: break-word">
                                 In warmer weather, light and comfortable clothing is recommended</div>
-                            <div class="TakeAppropriateProtectiveWhetherOutdoorActivitiesOrIndoors"
+                            <div class="uvLevelMessage"
                                 style="align-self: stretch; height: 88px; color: black; font-size: 32px; font-family: Manrope; font-weight: 400; word-wrap: break-word">
                                 Take appropriate protective whether outdoor activities or indoors</div>
                         </div>
@@ -244,9 +244,25 @@
                 const mainWeather = data.current.weather[0].main;
                 const iconClass = getWeatherIcon(mainWeather);
                 const temp = Math.round(data.current.temp) / 10;
+                let uviMessage = '';
+                let uvi_level = getLevel(uvi)
+
+                if (uvi_level === 'Low') {
+                uviLevel = `Today's UV level is ${uvi_level}`
+                uviMessage = 'You can safely enjoy being outside!'
+            } else if (uvi_level === 'Medium') {
+                uviLevel = `Today's UV level is ${uvi_level}`
+                uviMessage = 'Seek shade during midday hours! Slip on a shirt, slop on sunscreen and slap on hat!';
+            } else{
+                uviLevel = `Today's UV level is ${uvi_level}`
+                uviMessage = 'Avoid being outside during midday hours! Make sure you seek shade! Shirt, sunscreen and hat are a must!';
+            }
+
+            document.querySelector('.Descripition .uvLevelDisplay').textContent = uviLevel;
+            document.querySelector('.Descripition .uvLevelMessage').textContent = uviMessage;
 
                 document.getElementById(`uvi`).textContent = 'UV Level: ' + uvi;
-                document.getElementById('uvi_level').textContent = getLevel(uvi);
+                document.getElementById('uvi_level').textContent = uvi_level;
                 document.getElementById('weather').textContent = mainWeather;
                 document.getElementById(`weather_icon`).className = iconClass;
                 document.getElementById('temp').textContent = temp + '°C';
@@ -255,4 +271,28 @@
     }
 
     getWeather(latitude, longitude)
+
+    document.addEventListener("DOMContentLoaded", function () {
+            var citySpan = document.getElementById("city")
+            if (citySpan.innerHTML.trim() === "") {
+                citySpan.innerHTML = "Melbourne"
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var dateElement = document.getElementById("date")
+            var currentDate = new Date()
+            var day = currentDate.getDate()
+            var month = currentDate.getMonth()
+            var year = currentDate.getFullYear()
+            var formattedDate = day + ' ' + getMonth(month) + ', ' + year
+            dateElement.textContent = formattedDate;
+        })
+
+        function getMonth(month){
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+            return months[month]
+        }
+
+
 </script>
