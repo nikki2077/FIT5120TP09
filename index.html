@@ -70,9 +70,14 @@
                         <i id="weather_icon" style="font-size:250px;"></i>
                     </div>
                     <div class="SearchLocation"
-                        style="width: 264px; height: 75px; left: 359px; top: 47px; position: absolute; justify-content: space-between; align-items: flex-end; display: inline-flex">
-                        <input type="text" id="locationInput" placeholder="Enter Suburb or Postcode"
-                            style="flex-grow: 1; margin-right: 8px;">
+                    style="width: 264px; height: 75px; left: 359px; top: 47px; position: absolute; justify-content: space-between; align-items: flex-end; display: inline-flex">
+                        <div class="search-input-box">
+                            <input type="text" id="locationInput" placeholder="Enter Suburb"
+                            style="flex-grow: 1;margin-bottom: 10px;">
+                            <input type="text" id="postcodeInput" placeholder="Enter Postcode"
+                            style="flex-grow: 1; ">
+                        </div>
+
                         <!-- Search Button -->
                         <button id="searchButton" style="width: 34px; height: 34px;">🔍</button>
                     </div>
