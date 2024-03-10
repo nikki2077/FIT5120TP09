@@ -250,17 +250,16 @@
                 if (uvi_level === 'Low') {
                 uviLevel = `Today's UV level is ${uvi_level}`
                 uviMessage = 'You can safely enjoy being outside!'
-            } else if (uvi_level === 'Medium') {
-                uviLevel = `Today's UV level is ${uvi_level}`
-                uviMessage = 'Seek shade during midday hours! Slip on a shirt, slop on sunscreen and slap on hat!';
-            } else{
-                uviLevel = `Today's UV level is ${uvi_level}`
-                uviMessage = 'Avoid being outside during midday hours! Make sure you seek shade! Shirt, sunscreen and hat are a must!';
-            }
+                } else if (uvi_level === 'Medium') {
+                    uviLevel = `Today's UV level is ${uvi_level}`
+                    uviMessage = 'Seek shade during midday hours! Slip on a shirt, slop on sunscreen and slap on hat!';
+                } else{
+                    uviLevel = `Today's UV level is ${uvi_level}`
+                    uviMessage = 'Avoid being outside during midday hours! Make sure you seek shade! Shirt, sunscreen and hat are a must!';
+                }
 
-            document.querySelector('.Descripition .uvLevelDisplay').textContent = uviLevel;
-            document.querySelector('.Descripition .uvLevelMessage').textContent = uviMessage;
-
+                document.querySelector('.Descripition .uvLevelDisplay').textContent = uviLevel;
+                document.querySelector('.Descripition .uvLevelMessage').textContent = uviMessage;
                 document.getElementById(`uvi`).textContent = 'UV Level: ' + uvi;
                 document.getElementById('uvi_level').textContent = uvi_level;
                 document.getElementById('weather').textContent = mainWeather;
@@ -293,6 +292,4 @@
             var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
             return months[month]
         }
-
-
 </script>
