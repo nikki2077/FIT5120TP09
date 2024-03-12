@@ -1,0 +1,97 @@
+// G'day UV
+color: #B3A0FF;
+ font-size: 48px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// Sunscreen Calculator
+color: rgba(255, 201.04, 100.33, 0.85);
+ font-size: 36px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// About (Github)
+color: rgba(255, 201.04, 100.33, 0.85);
+ font-size: 36px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// 5 March, 2024
+color: #B3A0FF;
+ font-size: 18px;
+ font-family: Manrope;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Melbourne
+color: black;
+ font-size: 48px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// Suburb or Postcode
+color: black;
+ font-size: 20px;
+ font-family: Roboto;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// 3006
+color: #333333;
+ font-size: 14px;
+ font-family: Manrope;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// 19°
+color: black;
+ font-size: 128px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// Cloud
+color: #B3A0FF;
+ font-size: 24px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// L3
+color: black;
+ font-size: 128px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// High
+color: #B3A0FF;
+ font-size: 24px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// Sun Safety Tips and Tricks
+color: black;
+ font-size: 36px;
+ font-family: Manrope;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// In warmer weather, light and comfortable clothing is recommended
+color: #B3A0FF;
+ font-size: 32px;
+ font-family: Manrope;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Take appropriate protective whether outdoor activities or indoors
+color: #B3A0FF;
+ font-size: 32px;
+ font-family: Manrope;
+ font-weight: 400;
+ word-wrap: break-word
