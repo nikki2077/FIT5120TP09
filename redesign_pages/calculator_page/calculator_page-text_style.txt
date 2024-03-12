@@ -1,0 +1,27 @@
+// G'day UV
+color: #B3A0FF;
+ font-size: 48px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// Dashboard
+color: rgba(255, 201.04, 100.33, 0.85);
+ font-size: 36px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// About (Github)
+color: rgba(255, 201.04, 100.33, 0.85);
+ font-size: 36px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
+// Sunscreen Calculator
+color: #B3A0FF;
+ font-size: 96px;
+ font-family: Manrope;
+ font-weight: 700;
+ word-wrap: break-word
