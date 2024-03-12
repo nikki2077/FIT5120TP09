@@ -249,7 +249,6 @@
             .then(response => response.json())
             .then(data => {
                 const uvi = Math.round(data.current.uvi);
-                console.log(uvi);
                 const mainWeather = data.current.weather[0].main;
                 const iconClass = getWeatherIcon(mainWeather);
                 const temp = Math.round(data.current.temp) / 10;
