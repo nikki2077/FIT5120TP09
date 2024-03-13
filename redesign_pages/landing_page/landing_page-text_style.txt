@@ -5,15 +5,22 @@ color: #B3A0FF;
  font-weight: 800;
  word-wrap: break-word
 ---
+// Dashboard
+color: rgba(255, 240.65, 213.87, 0.85);
+ font-size: 36px;
+ font-family: Manrope;
+ font-weight: 800;
+ word-wrap: break-word
+---
 // Sunscreen Calculator
-color: rgba(255, 240.48, 211.90, 0.85);
+color: rgba(255, 240.65, 213.87, 0.85);
  font-size: 36px;
  font-family: Manrope;
  font-weight: 800;
  word-wrap: break-word
 ---
 // About (Github)
-color: rgba(255, 240, 212, 0.85);
+color: rgba(255, 240.65, 213.87, 0.85);
  font-size: 36px;
  font-family: Manrope;
  font-weight: 800;

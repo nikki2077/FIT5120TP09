@@ -61,7 +61,7 @@ color: #B3A0FF;
  font-weight: 800;
  word-wrap: break-word
 ---
-// L3
+// 3
 color: black;
  font-size: 128px;
  font-family: Manrope;
@@ -75,7 +75,7 @@ color: #B3A0FF;
  font-weight: 800;
  word-wrap: break-word
 ---
-// Sun Safety Tips and Tricks
+// Clothing Recommendations
 color: black;
  font-size: 36px;
  font-family: Manrope;
