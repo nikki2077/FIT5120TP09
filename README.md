@@ -2,7 +2,9 @@
 
 **IMPORTANT NOTICE: Due to some reasons, we have changed the website architecture. Therefore, a new repository has been used for all further updates. Please visit the following link for more information:**
 
-**[https://github.com/nikki2077/UV](https://github.com/nikki2077/UV)**
+**[New github repository](https://github.com/nikki2077/UV)**
+
+**[New UV Trakcker Website](https://uvtrakcker.netlify.app/)**
 
 ---
 
