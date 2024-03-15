@@ -1,5 +1,11 @@
 # FIT5120 Onboarding Project - Team TP09 (24S1)
 
+**IMPORTANT NOTICE: Due to some reasons, we have changed the website architecture. Therefore, a new repository has been used for all further updates. Please visit the following link for more information:**
+
+**[https://github.com/nikki2077/UV](https://github.com/nikki2077/UV)**
+
+---
+
 Welcome to the GitHub repository for Team TP09's project in the FIT5120 course at Monash University for the 24S1 semester. This repository contains the project code, documentation, and other related materials.
 
 ## Project Description
